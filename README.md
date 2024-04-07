@@ -1,6 +1,9 @@
 # Java Chess Engine
 
-> Quick note: Try not to go over 6 in depth, or you'll have to wait like 20 seconds (depending on your PC strength)! If you want, you can package it into a jar file so replit's 0.5 virtual CPU doesn't drag down the performance too much.
+![promo](https://github.com/cooper-ross/java-chess/assets/120236631/4f144503-8dc9-4a8e-96e7-9387afb21feb)
+
+
+> Quick note: Try not to go over 6 in depth (or 9 on PCs), or you'll have to wait like 20 seconds! If you want, you can package it into a jar file so replit's 0.5 virtual CPU doesn't drag down the performance too much.
 
 > #### Second quick note: The program is still unfinished! I have way more work to do! It should take me another 2 or 3 days to implement a endgame system for evaluation, and then I want to try some tablebase stuff for openings and 5 man tablebase lookups!
 ## Overview
@@ -48,8 +51,8 @@ Here are some potential enhancements and features I'd like to add if I ever get 
 ## Testing it out!
 
 I have a few of test postions for the bot, to find mate, or the best move in any given situation:
-* `3r2k1/p4ppp/b1pb1Q2/q7/8/1B3p2/PBPPNP1P/1R2K1R1 b - - 1 0` Mate in 4. Requires a depth of 6, so a search time of around 3000ms should work.
-* `rn3rk1/p5pp/2p5/3Ppb2/2q5/1Q6/PPPB2PP/R3K1NR b - - 0 1` Mate in 3. Requires a depth of 4, so should work within the default time.
-* `7r/p3ppk1/3p4/2p1P1Kp/2Pb4/3P1QPq/PP5P/R6R b - - 0 1` Mate in 2. Works on the default depth.
-* `r2qk2r/1pp2ppp/p1np1n2/2b1p1B1/2B1P1b1/2NP1N1P/PPP2PP1/R2Q1RK1 b kq - 0 8` An agree with stockfish test, best move is bishop takes f3.
-* `8/8/7k/8/8/8/5q2/3B2RK b - - 0 1` Weird piece winning combo. Depth 4 is fine. Best move is king to h7, which leads to winning a piece a few moves later.
+* `3r2k1/p4ppp/b1pb1Q2/q7/8/1B3p2/PBPPNP1P/1R2K1R1 b - - 1 0` Mate in 4. Requires a depth of 6, so a search time of around 3000ms should work (if you are on PC and not replit, 500ms works).
+* `rn3rk1/p5pp/2p5/3Ppb2/2q5/1Q6/PPPB2PP/R3K1NR b - - 0 1` Mate in 3. Requires a depth of 4, so should work within the default time (if you are on PC and not replit, 500ms works).
+* `7r/p3ppk1/3p4/2p1P1Kp/2Pb4/3P1QPq/PP5P/R6R b - - 0 1` Mate in 2. Works on the default time (if you are on PC and not replit, 50ms works).
+* `r2qk2r/1pp2ppp/p1np1n2/2b1p1B1/2B1P1b1/2NP1N1P/PPP2PP1/R2Q1RK1 b kq - 0 8` An agree with stockfish test, best move is bishop takes f3, so a search time of around 1000ms should work (if you are on PC and not replit, 300ms works).
+* `8/8/7k/8/8/8/5q2/3B2RK b - - 0 1` Weird piece winning combo. Depth 4 is fine. Best move is king to h7, which leads to winning a piece a few moves later, so a search time of around 800ms should work (if you are on PC and not replit, 300ms works).
