@@ -56,3 +56,25 @@ I have a few of test postions for the bot, to find mate, or the best move in any
 * `7r/p3ppk1/3p4/2p1P1Kp/2Pb4/3P1QPq/PP5P/R6R b - - 0 1` Mate in 2. Works on the default time (if you are on PC and not replit, 50ms works).
 * `r2qk2r/1pp2ppp/p1np1n2/2b1p1B1/2B1P1b1/2NP1N1P/PPP2PP1/R2Q1RK1 b kq - 0 8` An agree with stockfish test, best move is bishop takes f3, so a search time of around 1000ms should work (if you are on PC and not replit, 300ms works).
 * `8/8/7k/8/8/8/5q2/3B2RK b - - 0 1` Weird piece winning combo. Depth 4 is fine. Best move is king to h7, which leads to winning a piece a few moves later, so a search time of around 800ms should work (if you are on PC and not replit, 300ms works).
+
+## Example console (800ms, PC)
+
+```
+Got to depth: 1 Searched Nodes: 1.0 Evaluated Nodes: 30.0 5742 0
+Got to depth: 2 Searched Nodes: 31.0 Evaluated Nodes: 133.0 5742 3
+Got to depth: 3 Searched Nodes: 185.0 Evaluated Nodes: 2860.0 6125 28
+Got to depth: 4 Searched Nodes: 4628.0 Evaluated Nodes: 25212.0 6125 93
+Got to depth: 5 Searched Nodes: 9967.0 Evaluated Nodes: 168733.0 5742 282
+Got to depth: 6 Searched Nodes: 323097.0 Evaluated Nodes: 1351780.0 5742 695
+```
+
+## Example console (30s, Replit)
+
+```
+Got to depth: 1 Searched Nodes: 1.0 Evaluated Nodes: 29.0 5742 10
+Got to depth: 2 Searched Nodes: 30.0 Evaluated Nodes: 83.0 5742 31
+Got to depth: 3 Searched Nodes: 228.0 Evaluated Nodes: 5281.0 5742 343
+Got to depth: 4 Searched Nodes: 3582.0 Evaluated Nodes: 12278.0 4528 949
+Got to depth: 5 Searched Nodes: 24305.0 Evaluated Nodes: 420681.0 5742 5691
+Got to depth: 6 Searched Nodes: 527718.0 Evaluated Nodes: 1883685.0 4528 31809
+```
